@@ -24,5 +24,19 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="tools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tools.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="watermark.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

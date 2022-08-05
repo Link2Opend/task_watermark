@@ -7,6 +7,7 @@
 #include <string>
 #include "core.h"
 #include "tools.h"
+#include "bch.h"
 using namespace std;
 using namespace cv;
 
@@ -15,6 +16,11 @@ public:
 	int blind_wm;
 	int password_wm;
 	int wm_size;
+
+	int t;
+	unsigned int prim_poly;
+	int m;
+
 	Mat embedding_img;
 	tools tool;
 	vector<int> wm_bit;
@@ -23,7 +29,7 @@ public:
 	WaterMark(int password_wm, int password_img);
 	~WaterMark();
 	Mat read_img(string filename);
-	void read_wm(vector<int> wm_content);
+	vector<int> read_wm(vector<int> wm_content);
 	Mat embed();
 	Mat partition_embed();
 	vector<int> extract_decrypt(vector<int>& wm_avg);
